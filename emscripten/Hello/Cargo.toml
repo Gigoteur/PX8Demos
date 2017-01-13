@@ -1,0 +1,22 @@
+[package]
+name = "hello"
+version = "0.0.1"
+authors = ["hallucino <d@t0t0.fr>"]
+description = "PX8 Emscripten Hello World"
+documentation = "https://github.com/Gigoteur/PX8/blob/master/README.md"
+homepage = "https://github.com/Gigoteur/PX8"
+repository = "https://github.com/Gigoteur/PX8"
+keywords = ["rust", "console", "python", "lua", "8bits"]
+license = "MIT"
+
+[dependencies]
+sdl2 = "0.27.2"
+log = "0.3.6"
+fern = "0.3.5"
+time = "0.1.35"
+rand = "0.3.15"
+
+[dependencies.px8]
+git = "https://github.com/Gigoteur/PX8"
+features = ["lua", "sdl_renderer"]
+

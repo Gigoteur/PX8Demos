@@ -17,6 +17,9 @@ time = "0.1.35"
 rand = "0.3.15"
 
 [dependencies.px8]
-git = "https://github.com/Gigoteur/PX8"
-features = ["lua", "sdl_renderer"]
+path = "/Volumes/Personnel/Gigoteur/PX8"
+#git = "https://github.com/Gigoteur/PX8"
+features = [""]
 
+#[target.'cfg(target_os = "emscripten")'.dependencies]
+#emscripten-sys = "0.1.0"

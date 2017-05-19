@@ -1,4 +1,4 @@
-buildtype = release
+buildtype = debug#release
 
 PROJECT = hello
 TARGET = asmjs-unknown-emscripten
@@ -43,3 +43,7 @@ $(CARGO_OUTDIR)/$(JS_FILE): FORCE
 
 $(DOCS_DIR)/$(JS_FILE): $(CARGO_OUTDIR)/$(JS_FILE) FORCE
 	find $(CARGO_OUTDIR) \( -name '*.js' -or -name '*.js.mem' \) -exec cp {} $(DOCS_DIR) \;
+
+build-deps:
+	embuilder.py build sdl2 gl libc dlmalloc
+.PHONY: build-deps

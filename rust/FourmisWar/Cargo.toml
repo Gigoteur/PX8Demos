@@ -1,0 +1,22 @@
+[package]
+name = "FourmisWar"
+version = "0.0.1"
+authors = ["hallucino <d@t0t0.fr>"]
+description = "FourmisWar !"
+documentation = "https://github.com/Gigoteur/PX8/blob/master/README.md"
+homepage = "https://github.com/Gigoteur/PX8"
+repository = "https://github.com/Gigoteur/PX8"
+keywords = ["rust", "console", "python", "lua", "8bits"]
+
+[dependencies]
+sdl2 = "0.27.2"
+log = "0.3.6"
+fern = "0.3.5"
+time = "0.1.35"
+rand = "0.3.15"
+chan ="0.1.18"
+regex = "0.2.1"
+nalgebra = "0.10.*"
+
+[dependencies.px8]
+git = "https://github.com/Gigoteur/PX8"
